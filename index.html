@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trello</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="index.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Trello</h1>
+      <h1>Trello</h1>
     </header>
-    <button id="add-list"> Add List </button>
     <div class="title-list">
-        <label for="title-list">List title</label>
-        <input id="title-list" type="text" required>
+      <label for="title-list">List title</label>
+      <input id="title-list" type="text" required />
     </div>
+    <button id="add-list">Add List</button>
     <main>
-        <section class="note-display">
-        </section>
-        <section class="new-note">
-            <h2>Enter new card Data and press + icon on any list to add</h2>
-            <form>
-                <div>
-                    <label for="title">Note title</label>
-                    <input id="title" type="text" required>
-                </div>
-                <div>
-                    <label for="body">Note text</label>
-                    <input id="body" type="text" required>
-                </div>
-            </form>
-        </section>
+      <section class="note-display"></section>
+      <section class="new-note">
+        <h2>Enter new card Data and press + icon on any list to add</h2>
+        <form>
+          <div>
+            <label for="title">Note title</label>
+            <input id="title" type="text" required />
+          </div>
+          <div>
+            <label for="body">Note text</label>
+            <input id="body" type="text" required />
+          </div>
+        </form>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>

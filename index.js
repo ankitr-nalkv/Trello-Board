@@ -38,7 +38,11 @@ form.onsubmit = addData;
 
 function addList(e) {
   e.preventDefault();
-
+  if(!titleListInput.value){
+     alert('Please add List name');
+     return;
+  }
+      
   let newItem = {
     id: uuidv4(),
     listTitle: titleListInput.value,
@@ -169,6 +173,10 @@ function addData(e, curList, listData, nodeData) {
   if (nodeData && Object.keys(nodeData).length) {
     listData.cards[nodeData.id] = nodeData;
   } else {
+    if(!titleInput.value || !bodyInput.value ) {
+      alert('Please add data in the form below and then press add card');
+      return;
+    }
     let cardId = uuidv4();
     let newItem = {
       id: cardId,
